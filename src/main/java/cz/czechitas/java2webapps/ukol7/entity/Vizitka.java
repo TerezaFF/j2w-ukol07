@@ -44,25 +44,6 @@ public class Vizitka {
     @Length(max = 100)
     private String web;
 
-    @Transient
-    private String celaAdresa;
-
-    public Vizitka(Integer id, String celeJmeno, String firma, String ulice, String obec, String psc, String email, String telefon, String web) {
-        this.id = id;
-        this.celeJmeno = celeJmeno;
-        this.firma = firma;
-        this.ulice = ulice;
-        this.obec = obec;
-        this.psc = psc;
-        this.email = email;
-        this.telefon = telefon;
-        this.web = web;
-    }
-
-    public Vizitka() {
-
-    }
-
     public void setId(Integer id) {
         this.id = id;
     }
